@@ -87,7 +87,7 @@ def create_roadmap_item(item: RoadmapItem):
         ]
 
     response = requests.post(NOTION_API_URL, headers=HEADERS, json=payload)
-    if response.status_code == 200:
+    if response.ok:
         return
     else:
         raise ValueError(f"Failed to create roadmap item: {response.status_code} - {response.text}")
