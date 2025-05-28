@@ -1,0 +1,10 @@
+[project]
+name = "notion-mcp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "dspy>=2.6.24",
+    "mcp[cli]>=1.9.0",
+]
